@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaAll.iml" filepath="$PROJECT_DIR$/.idea/JavaAll.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ListaLigada/ListaLigada.iml" filepath="$PROJECT_DIR$/ListaLigada/ListaLigada.iml" />
     </modules>
   </component>
 </project>
