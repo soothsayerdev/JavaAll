@@ -1,4 +1,9 @@
 package com.cotuca.store_java.Repository;
 
-public interface ShipperRepository {
+import com.cotuca.store_java.Model.Shipper;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ShipperRepository extends JpaRepository<Shipper, Integer> {
 }

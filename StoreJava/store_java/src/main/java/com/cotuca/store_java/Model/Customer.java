@@ -10,7 +10,6 @@ public class Customer {
     @Id
     @GeneratedValue
     private int customerID;
-
     private String name;
     private String address;
     private String city;

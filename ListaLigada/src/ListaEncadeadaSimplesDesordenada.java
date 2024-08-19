@@ -14,8 +14,29 @@ public class ListaEncadeadaSimplesDesordenada <X> implements Cloneable{
             this.prox = null;
         }
 
-        public X getInfo(){
+        public X getInfo() {
+            return info;
+        }
 
+        public void setInfo(X info) {
+            this.info = info;
+        }
+
+        public No getProx() {
+            return prox;
+        }
+
+        public void setProx(No prox) {
+            this.prox = prox;
+        }
+        
+
+        @Override
+        public String toString() {
+            return "No{" +
+                    "info=" + info +
+                    ", prox=" + prox +
+                    '}';
         }
     }
 
