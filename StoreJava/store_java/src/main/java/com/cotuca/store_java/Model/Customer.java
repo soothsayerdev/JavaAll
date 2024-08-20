@@ -1,5 +1,6 @@
 package com.cotuca.store_java.Model;
 
+import jakarta.persistence.*;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
@@ -10,6 +11,7 @@ public class Customer {
     @Id
     @GeneratedValue
     private int customerID;
+    @Colum()
     private String name;
     private String address;
     private String city;

@@ -29,7 +29,7 @@ public class ListaEncadeadaSimplesDesordenada <X> implements Cloneable{
         public void setProx(No prox) {
             this.prox = prox;
         }
-        
+
 
         @Override
         public String toString() {
