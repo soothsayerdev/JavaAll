@@ -6,8 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="866a8681-a119-41b7-81a3-4101a276a6d9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ListaLigada/src/ListaEncadeadaSimplesDesordenada.java" beforeDir="false" afterPath="$PROJECT_DIR$/ListaLigada/src/ListaEncadeadaSimplesDesordenada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StoreJava/store_java/src/main/java/com/cotuca/store_java/Controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/StoreJava/store_java/src/main/java/com/cotuca/store_java/Controller/CustomerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StoreJava/store_java/src/main/java/com/cotuca/store_java/Model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/StoreJava/store_java/src/main/java/com/cotuca/store_java/Model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StoreJava/store_java/src/main/java/com/cotuca/store_java/Model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/StoreJava/store_java/src/main/java/com/cotuca/store_java/Model/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StoreJava/store_java/src/main/java/com/cotuca/store_java/Model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/StoreJava/store_java/src/main/java/com/cotuca/store_java/Model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StoreJava/store_java/src/main/java/com/cotuca/store_java/Model/ProductCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/StoreJava/store_java/src/main/java/com/cotuca/store_java/Model/ProductCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StoreJava/store_java/src/main/java/com/cotuca/store_java/Model/SalesOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/StoreJava/store_java/src/main/java/com/cotuca/store_java/Model/SalesOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StoreJava/store_java/src/main/java/com/cotuca/store_java/Model/SalesOrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/StoreJava/store_java/src/main/java/com/cotuca/store_java/Model/SalesOrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StoreJava/store_java/src/main/java/com/cotuca/store_java/Model/Shipper.java" beforeDir="false" afterPath="$PROJECT_DIR$/StoreJava/store_java/src/main/java/com/cotuca/store_java/Model/Shipper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StoreJava/store_java/src/main/java/com/cotuca/store_java/Model/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/StoreJava/store_java/src/main/java/com/cotuca/store_java/Model/Supplier.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,19 +42,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/dlour/Documents/GitHub/JavaAll/StoreJava/store_java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/dlour/Documents/GitHub/TP_SegundoSemestre"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\dlour\Documents\GitHub\JavaAll\StoreJava\store_java\src\main\java\com\cotuca\store_java" />

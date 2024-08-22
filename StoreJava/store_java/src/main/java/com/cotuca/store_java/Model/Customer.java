@@ -6,16 +6,25 @@ import jakarta.persistence.Id;
 
 import java.util.Objects;
 
+@Entity
 public class Customer {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int customerID;
-    @Colum()
+    @Column(name = "name", nullable = false, length = 50)
     private String name;
+
+    @Column(name = "address", nullable = false, length = 100)
     private String address;
+
+    @Column(name = "city", nullable = false, length = 100)
     private String city;
+
+    @Column(name = "state", nullable = false, length = 100)
     private String state;
+
+    @Column(name = "postalCode", nullable = false, length = 50)
     private String postalCode;
 
     public Customer(){

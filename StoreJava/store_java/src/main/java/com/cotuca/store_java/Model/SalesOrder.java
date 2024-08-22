@@ -1,21 +1,38 @@
 package com.cotuca.store_java.Model;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import javax.xml.crypto.Data;
 import java.util.Objects;
 
+@Entity
 public class SalesOrder {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int salesOrderID;
-    private int customerID; //
-    private int employeeID; //
-    private int shipperID; //
+
+    @ManyToOne
+    @JoinColumn(name = "customerID", nullable = false)
+    private Customer customerID;
+
+    @ManyToOne
+    @JoinColumn(name = "employeeID", nullable = false)
+    private Employee employeeID;
+
+    @ManyToOne
+    @JoinColumn(name = "shipperID", nullable = false)
+    private Shipper shipperID;
+
+    @Column(name = "orderDate", nullable = false)
     private Data orderDate;
+
+    @Column(name = "estimatedDeliveryDate", nullable = false)
     private Data estimatedDeliveryDate;
+
+    @Column(name = "freight", nullable = false)
     private double freight;
+
+    @Column(name = "total", nullable = false)
     private double total;
 
     public SalesOrder(){
@@ -33,15 +50,15 @@ public class SalesOrder {
         return salesOrderID;
     }
 
-    public int getCustomerID() {
+    public Customer getCustomerID() {
         return customerID;
     }
 
-    public int getEmployeeID() {
+    public Employee getEmployeeID() {
         return employeeID;
     }
 
-    public int getShipperID() {
+    public Shipper getShipperID() {
         return shipperID;
     }
 

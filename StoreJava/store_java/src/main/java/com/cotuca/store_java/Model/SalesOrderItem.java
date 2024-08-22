@@ -1,17 +1,26 @@
 package com.cotuca.store_java.Model;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.util.Objects;
 
+@Entity
 public class SalesOrderItem {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int salesOrderID;
-    private int productID;
+
+    @ManyToOne
+    @JoinColumn(name = "productID", nullable = false)
+    private Product productID;
+
+    @Column(name = "quantity", nullable = false)
     private int quantity;
+
+    @Column(name = "unitPrice", nullable = false)
     private double unitPrice;
+
+    @Column(name = "discount", nullable = false)
     private double discount;
 
     public SalesOrderItem(){
@@ -28,7 +37,7 @@ public class SalesOrderItem {
         return salesOrderID;
     }
 
-    public int getProductID() {
+    public Product getProductID() {
         return productID;
     }
 

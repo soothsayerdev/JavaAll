@@ -1,19 +1,33 @@
 package com.cotuca.store_java.Model;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.util.Objects;
 
+@Entity
 public class Product {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int productID;
-    private int supplierID;
-    private int productCategoryID;
+
+    @ManyToOne
+    @JoinColumn(name = "supplierID", nullable = false)
+    private Supplier supplierID;
+
+    @ManyToOne
+    @JoinColumn(name = "productCategoryID", nullable = false)
+    private ProductCategory productCategoryID;
+
+    @Column(name = "name", nullable = false, length = 100)
     private String name;
+
+    @Column(name = "unitPrice", nullable = false)
     private double unitPrice;
+
+    @Column(name = "address", nullable = false)
     private int unitsInStock;
+
+    @Column(name = "discounted", nullable = false )
     private boolean discounted;
 
     public Product(){
@@ -31,12 +45,11 @@ public class Product {
         return productID;
     }
 
-
-    public int getSupplierID() {
+    public Supplier getSupplierID() {
         return supplierID;
     }
 
-    public int getProductCategoryID() {
+    public ProductCategory getProductCategoryID() {
         return productCategoryID;
     }
 
@@ -71,6 +84,7 @@ public class Product {
     public void setDiscounted(boolean discounted) {
         this.discounted = discounted;
     }
+
 
     @Override
     public boolean equals(Object o) {

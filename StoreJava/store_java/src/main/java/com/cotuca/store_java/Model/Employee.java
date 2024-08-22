@@ -1,24 +1,39 @@
 package com.cotuca.store_java.Model;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import javax.xml.crypto.Data;
 import java.util.Date;
 import java.util.Objects;
 
+@Entity
 public class Employee {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int employeeID;
 
+    @Column(name = "name", nullable = false, length = 50)
     private String name;
+
+    @Column(name = "address", nullable = false, length = 100)
     private String address;
+
+    @Column(name = "city", nullable = false, length = 100)
     private String city;
+
+    @Column(name = "state", nullable = false, length = 100)
     private String state;
+
+    @Column(name = "phone", nullable = false, length = 100)
     private String phone;
+
+    @Column(name = "postalCode", nullable = false, length = 100)
     private String postalCode;
+
+    @Column(name = "birthDate", nullable = false)
     private Data birthDate;
+
+    @Column(name = "hireDate", nullable = false)
     private Data hireDate;
 
     public Employee(){
