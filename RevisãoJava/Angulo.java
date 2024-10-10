@@ -86,7 +86,7 @@ public class Angulo implements Cloneable, Comparable<Angulo>{
     @Override
     public Object clone() {
         Angulo a = null;
-        
+
         try {
             a = new Angulo(this);
         }catch (Exception e){
