@@ -1,40 +1,35 @@
 package com.exemplo.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 @Entity
 @Table
 @NoArgsConstructor
+@AllArgsConstructor
+@Getter
 @Setter
 @ToString
 @EqualsAndHashCode
 public class Transaction {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
+    @ManyToOne
+    @JoinColumn(name = "account.number")
+    private Account account;
+
+    @Column(nullable = false)
     private Double amount;
 
-    private LocalDateTime date;
+    @Column(nullable = false)
+    private Date date;
 
+    @Column(nullable = true, length = 150)
     private String notes;
 
-    public Transaction(Double amount, LocalDateTime date, String notes){
-        this.amount = amount;
-        this.date = date;
-        this.notes = notes;
-    }
-
-    public Double getAmount() {
-        return amount;
-    }
-
-    public LocalDateTime getDate() {
-        return date;
-    }
-
-    public String getNotes() {
-        return notes;
-    }
 }
